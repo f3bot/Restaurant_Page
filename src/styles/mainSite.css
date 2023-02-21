@@ -1,12 +1,37 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap');
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../assets/homepage.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 img{
-    background: linear-gradient(
-        rgba(0, 0, 0, 0.7), 
-        rgba(0, 0, 0, 0.7)
-    );
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+span{
+    color: white;
+    font-family: 'Dosis', sans-serif;
+    font-size: calc(36px - .25vw);
+}
+
+.text-div{
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-hero-center{
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: calc(100px - .25vw);
 }

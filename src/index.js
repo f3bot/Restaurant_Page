@@ -1,6 +1,7 @@
 import '../src/mainstyle.css'
-import { generateContent } from './components/mainSite'
 import { generateNavbar } from './components/navbar'
+import { generateHero } from './components/mainSite'
+
 
 generateNavbar()
-generateContent()
+generateHero()

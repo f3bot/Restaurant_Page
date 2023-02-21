@@ -1,21 +1,48 @@
 import '../styles/mainSite.css'
 
-const generateContent = () =>{
-    generateLeftDiv()
-    const div = document.createElement('div')  
-    let img = document.createElement('img')
-    img.src = '../src/assets/marinated-black-cod.jpg'
-    div.appendChild(img)
-
+const generateHero = ( ) =>{
+    const div = document.createElement('div')
+    div.textContent = 'test'
+    div.classList.add('hero')
+    const textDiv = document.createElement('div')
+    textDiv.classList.add('text-div')
+    div.appendChild(textDiv)
+    generateLogo(textDiv)
+    generateDescription(textDiv)
+    generateButton(textDiv)
+    generateDiv(textDiv)
+    
     document.body.appendChild(div)
 }
 
-const generateLeftDiv = (parent) =>{
-    console.log("LEFT")
-    const descriptionDiv = document.createElement('div')
-
+const generateLogo = (parent) =>{
+    const span = document.createElement('span')
+    span.classList.add('logo-hero-center')
+    span.textContent = 'TONCHIN'
+    parent.appendChild(span)
 }
 
-let descriptionText = 'The menu is comprehensive and alluring. Dishes are authentic but not traditional with bold, intense flavours and an emphasis on simple presentation acquired through quality ingredients. There is no set protocol on ordering from the menu; izakaya style means that dishes are designed to be shared at the table.'
+const generateDescription = (parent) =>{
+    const span = document.createElement('span')
+    span.textContent = 'contemporary japanese cuisine'
+    parent.appendChild(span)
+}
 
-export { generateContent }
+const generateButton = (parent) =>{
+    const button = document.createElement('button')
+    button.textContent = 'make a reservation'
+    parent.appendChild(button)
+}
+
+const generateDiv = (parent) =>{
+    const div = document.createElement('div')
+    const spanOne = document.createElement('span')
+    spanOne.textContent = 'private dining'
+    const spanTwo = document.createElement('span')
+    spanTwo.textContent = 'locations'
+    div.appendChild(spanOne)
+    div.appendChild(spanTwo)
+    parent.appendChild(div)
+}
+
+export { generateHero }
