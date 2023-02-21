@@ -2,7 +2,6 @@ import '../styles/mainSite.css'
 
 const generateHero = ( ) =>{
     const div = document.createElement('div')
-    div.textContent = 'test'
     div.classList.add('hero')
     const textDiv = document.createElement('div')
     textDiv.classList.add('text-div')
@@ -36,6 +35,7 @@ const generateButton = (parent) =>{
 
 const generateDiv = (parent) =>{
     const div = document.createElement('div')
+    div.classList.add('lower-div')
     const spanOne = document.createElement('span')
     spanOne.textContent = 'private dining'
     const spanTwo = document.createElement('span')

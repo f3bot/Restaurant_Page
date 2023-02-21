@@ -2,16 +2,16 @@
 
 p{
     font-family: 'Lexend Deca', sans-serif;
-    font-size: calc(48px - 0.25vw);
-    color: white;
+    color: #ffffff;
+    font-size: 4vh;
 }
 
 nav{
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: calc(3% - 1vw);
+    width: 100%;
+    padding: 2% !important;
 }
