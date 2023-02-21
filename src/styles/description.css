@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap');
+
+
+.essence-hero{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+}
+
+.essence-left-div{
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/ESSENCE-OF-ZUMA.jpg);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.essence-right-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #040912;
+    color: #ffffff;
+    font-family: 'Dosis', sans-serif;
+}
+
+.essence-right-div span{
+    width: 50%;
+}
+
+.essence-small-text{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1.5vh !important;
+    color: #284780;
+}
+
+.essence-big-text
+{
+    text-align: right;
+    font-size: 2.5vw;
+}
