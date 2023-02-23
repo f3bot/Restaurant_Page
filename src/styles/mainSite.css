@@ -84,4 +84,8 @@ button:not(:hover)
         align-items: center;
         width: 100% !important;
     }
+
+    .logo-hero-center{
+        font-size: 10vw !important;
+    }
 }

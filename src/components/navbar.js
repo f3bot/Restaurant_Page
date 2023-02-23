@@ -10,6 +10,7 @@ const generateNavbar = () =>{
 const generateLeftDiv = (parent) =>{
     const div = document.createElement('div')
     const p = document.createElement('p')
+    div.classList.add('nav-left-div')
     p.textContent = 'MENU'
     div.appendChild(p)
     parent.appendChild(div)
